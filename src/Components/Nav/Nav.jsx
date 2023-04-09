@@ -9,7 +9,7 @@ const Nav = () => {
             <div className='flex flex-row gap-5 font-bold text-[#757575] '>
         
                 <Link to='/' className='hover:text-[#7E90FE]'>
-                    Home
+                    Homes
                 </Link>
 
                 <Link to='/statistics' className='hover:text-[#7E90FE]'>
