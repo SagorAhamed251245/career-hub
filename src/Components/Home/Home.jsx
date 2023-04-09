@@ -1,12 +1,13 @@
 import React from 'react';
-import Nav from '../Nav/Nav';
-import { Outlet } from 'react-router-dom';
+import Banner from './Banner/Banner';
+
 
 const Home = () => {
     return (
         <>
-           <h1>This is Home</h1>
-
+          <Banner>
+            
+          </Banner>
         </>
     );
 };

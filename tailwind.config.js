@@ -7,10 +7,7 @@ export default {
 
   theme: {
     extend: {
-      colors: {
-        'regal-blue':  "#7E90FE"
-        
-      },
+      
     },
   },
   plugins: [],
