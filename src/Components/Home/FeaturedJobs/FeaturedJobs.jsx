@@ -3,11 +3,15 @@ import { useLoaderData } from 'react-router-dom';
 import FeaturedJob from './FeaturedJob';
 
 const FeaturedJobs = () => {
-    const JobFeatured = useLoaderData()[1]
+    let JobFeatured = useLoaderData()[1]
     const [jobs , setJobs] = useState(false)
     if(!jobs){
-        JobFeatured.slice(0, 4)
-        console.log(JobFeatured)
+     
+        JobFeatured = JobFeatured.slice(0, 4)
+       
+    }
+    else{
+        JobFeatured = JobFeatured.slice(0, 6)
     }
     return (
         <section className='my-container'>
@@ -29,6 +33,9 @@ const FeaturedJobs = () => {
                     ></FeaturedJob>)
                 }
                 
+            </div>
+            <div className={`mt-10 text-center ${jobs && 'hidden'}` } onClick={()=>setJobs(true)}>
+                <button className='my-btn'>See All Jobs</button>
             </div>
         </section>
     );
