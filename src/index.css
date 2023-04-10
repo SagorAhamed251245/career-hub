@@ -3,17 +3,30 @@
 @tailwind utilities;
 
 .my-container {
-    @apply px-4 py-16 mx-auto max-w-xl md:max-w-full lg:max-w-screen-xl  lg:py-20
+    @apply px-4 py-16 mx-auto max-w-xl md:max-w-full md:mx-20 lg:py-20
 }
 
 .my-btn {
     @apply  bg-gradient-to-r from-cyan-500 to-blue-500 p-2 font-bold text-white
     rounded-lg  
 }
+.my-btn-secondary {
+    @apply  bg-white font-bold py-2 px-4 text-blue-500 
+    rounded-lg  
+}
 .gradient-text{
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 
 
 }
-  
+.my-h2{
+    @apply font-bold text-3xl mb-5
+}
+
+.my-bg-primary{
+   
+        @apply  bg-gradient-to-r from-cyan-500 to-blue-500 
+        
+    
+}
 
 

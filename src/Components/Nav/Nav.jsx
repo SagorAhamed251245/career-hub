@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => {
     return (
-        <nav className=' flex h-16 items-center justify-between gap-5 md:px-10'>
+        <nav className=' flex flex-col md:flex-row h-16 items-center justify-between gap-5 md:px-10'>
 
             <div className='grow font-bold md:text-3xl'>WorkHub</div>
             <div className='flex flex-row gap-5 font-bold text-[#757575] '>

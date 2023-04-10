@@ -10,7 +10,9 @@ import {
 import Home from './Components/Home/Home';
 import Statistics from './Components/Statistics/Statistics';
 import AppliedJobs from './Components/Applied Jobs/AppliedJobs';
-import Blog from './Blog/Blog';
+import Blog from './Components/Blog/Blog';
+import { JobPageLoader} from './loaders/FetchAllJsonFile';
+
 
 const router = createBrowserRouter([
   {
@@ -19,7 +21,8 @@ const router = createBrowserRouter([
     children: [
       {
         path:'/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader: JobPageLoader
       },
       {
         path: '/statistics',

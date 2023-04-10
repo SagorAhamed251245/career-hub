@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "company_logo": "https://i.ibb.co/CbFmJgj/google-1-1-1.png",
+      "job_title": "Software Engineer",
+      "company_name": "Google LLC",
+      "remote_or_onsite": "Remote",
+      "location": "New York, NY",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "$100,000 - $120,000",
+      "job_description": "We are seeking a talented software engineer to join our team.",
+      "job_responsibility": "Design, develop, test, and maintain software applications.",
+      "educational_requirements": "Bachelor's degree in Computer Science or related field",
+      "experiences": "3+ years of experience in software engineering",
+      "contact_information": {
+        "phone": "123-456-7890",
+        "email": "info@abctech.com"
+      }
+    },
+    {
+      "id": 2,
+      "company_logo": "https://i.ibb.co/6PY4Gjp/netflix-4-1.png",
+      "job_title": "Marketing Manager",
+      "company_name": "Netflix",
+      "remote_or_onsite": "Onsite",
+      "location": "Los Angeles, CA",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "$80,000 - $100,000",
+      "job_description": "We are looking for a talented marketing manager to join our team.",
+      "job_responsibility": "Develop and implement marketing strategies to promote our products and services.",
+      "educational_requirements": "Bachelor's degree in Marketing or related field",
+      "experiences": "5+ years of experience in marketing management",
+      "contact_information": {
+        "phone": "111-222-3333",
+        "email": "info@xyzcorp.com"
+      }
+    },
+    {
+      "id": 3,
+      "company_logo": "https://i.ibb.co/McM2kN0/Group-10021.png",
+      "job_title": "Graphic Designer",
+      "company_name": "Air BnB",
+      "remote_or_onsite": "Remote",
+      "location": "San Francisco, CA",
+      "fulltime_or_parttime": "Part-time",
+      "salary": "$50,000 - $60,000",
+      "job_description": "We are seeking a talented graphic designer to join our team.",
+      "job_responsibility": "Create and design graphics for various media platforms.",
+      "educational_requirements": "Bachelor's degree in Graphic Design or related field",
+      "experiences": "2+ years of experience in graphic design",
+      "contact_information": {
+        "phone": "555-666-7777",
+        "email": "info@123creative.com"
+      }
+    },
+    {
+      "id": 4,
+      "company_logo": "https://i.ibb.co/9gYnxkx/tesla-9-1.png",
+      "job_title": "Accountant",
+      "company_name": "Tesla",
+      "remote_or_onsite": "Onsite",
+      "location": "Chicago, IL",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "$60,000 - $80,000",
+      "job_description": "We are seeking a talented accountant to join our team.",
+      "job_responsibility": "Prepare financial statements and ensure compliance with accounting standards.",
+      "educational_requirements": "Bachelor's degree in Accounting or related field",
+      "experiences": "3+ years of experience in accounting",
+      "contact_information": {
+        "phone": "777-888-9999",
+        "email": "info@123creative.com"}
+    },
+    {
+        "id": 5,
+        "company_logo": "https://i.ibb.co/6PY4Gjp/netflix-4-1.png",
+        "job_title": "Product Manager",
+        "company_name": "Netflix",
+        "remote_or_onsite": "Onsite",
+        "location": "Seattle, WA",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$120,000 - $140,000",
+        "job_description": "We are looking for an experienced product manager to lead our product development efforts.",
+        "job_responsibility": "Define product strategy, develop roadmaps, and work closely with cross-functional teams to bring products to market.",
+        "educational_requirements": "Bachelor's degree in Business, Engineering or related field",
+        "experiences": "5+ years of experience in product management",
+        "contact_information": {
+          "phone": "999-888-7777",
+          "email": "info@efginc.com"
+        }
+      },
+      {
+        "id": 6,
+        "company_logo": "https://i.ibb.co/CbFmJgj/google-1-1-1.png",
+        "job_title": "Human Resources Manager",
+        "company_name": "Google LLC",
+        "remote_or_onsite": "Onsite",
+        "location": "Boston, MA",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$90,000 - $110,000",
+        "job_description": "We are seeking an experienced HR manager to oversee our HR operations.",
+        "job_responsibility": "Develop and implement HR policies and procedures, manage recruitment and employee retention programs, and ensure compliance with labor laws.",
+        "educational_requirements": "Bachelor's degree in Human Resources or related field",
+        "experiences": "7+ years of experience in HR management",
+        "contact_information": {
+          "phone": "333-444-5555",
+          "email": "info@lmncorp.com"
+        }
+      }
+      
+]
+  
