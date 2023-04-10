@@ -5,7 +5,22 @@ const JobDetails = () => {
     const dynamic = useParams()
    
     const [jobs , setJob] = useState([])
-   const {id}= jobs
+   const {
+    id, 
+    job_description, 
+    job_responsibility,
+    educational_requirements, 
+    experiences,
+    salary,
+    job_title,
+    contact_information,
+    
+    
+
+}= jobs
+
+
+
     useEffect(()=>{
         fetch('/public/JobFeatured.json')
         
@@ -24,11 +39,26 @@ const JobDetails = () => {
    
     
     return (
-        <div>
-           <div>
-            <h3>Job  </h3>
+        <>
+           <div className='text-3xl font-bold text-center mt-16 mb-[150px]'>
+            <h3 >Job Details</h3>
            </div>
-        </div>
+           
+           <section className='my-container'>
+
+            <div>
+               <p>
+                <span className='font-bold'>Job Description:</span>  {job_description}
+               </p>
+            </div>
+            {/* left side end*/}
+
+            {/* right side start */}
+            <div>
+              <h2>email: {contact_information?.phone}</h2>
+            </div>
+           </section>
+        </>
     );
 };
 
