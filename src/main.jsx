@@ -12,7 +12,6 @@ import Statistics from './Components/Statistics/Statistics';
 import AppliedJobs from './Components/Applied Jobs/AppliedJobs';
 import Blog from './Components/Blog/Blog';
 import { JobPageLoader} from './loaders/FetchAllJsonFile';
-import FeaturedJob from './Components/Home/FeaturedJobs/FeaturedJob';
 import JobDetails from './Components/Home/FeaturedJobs/JobDetails';
 
 

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { addToDb } from '../../../utils/fakedb';
+
 
 const JobDetails = () => {
     const dynamic = useParams()
@@ -37,7 +39,7 @@ const JobDetails = () => {
 
     }
 
-
+   console.log(jobs)
 
     return (
         <>
@@ -93,7 +95,7 @@ const JobDetails = () => {
                         </div>
                     </div>
                     <div className=' grow-0'>
-                        <button className='my-btn w-full '>Apply Now</button>
+                        <button onClick={()=>addToDb(id)} className='my-btn w-full '>Apply Now</button>
                     </div>
                 </div>
 
