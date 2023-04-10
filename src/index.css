@@ -29,4 +29,11 @@
     
 }
 
+.my-title{
+    @apply leading-relaxed w-[90%] my-10 font-semibold
+}
+.my-span-title{
+    @apply font-bold text-lg text-[#2795E9] mr-2
+}
+
 

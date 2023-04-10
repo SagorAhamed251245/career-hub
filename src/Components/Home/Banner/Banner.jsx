@@ -18,7 +18,7 @@ const Banner = () => {
             </div>
 
             <div className='md:w-1/2'>
-                <img src="/src/assets/All Images/P3OLGJ1 copy 1.png" alt="" />
+                <img src="https://i.ibb.co/F3P1FFX/P3-OLGJ1-copy-1.png" alt="" />
             </div>
         </section>
     );
