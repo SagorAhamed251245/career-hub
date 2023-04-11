@@ -1,78 +1,48 @@
 import React from 'react';
-import {
-    AreaChart,
-    Area,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip
-} from "recharts";
-const data = [
-    {
-        name: "Page A",
-        uv: 4000,
-        pv: 2400,
-        amt: 2400
-    },
-    {
-        name: "Page B",
-        uv: 3000,
-        pv: 1398,
-        amt: 2210
-    },
-    {
-        name: "Page C",
-        uv: 2000,
-        pv: 9800,
-        amt: 2290
-    },
-    {
-        name: "Page D",
-        uv: 2780,
-        pv: 3908,
-        amt: 2000
-    },
-    {
-        name: "Page E",
-        uv: 1890,
-        pv: 4800,
-        amt: 2181
-    },
-    {
-        name: "Page F",
-        uv: 2390,
-        pv: 3800,
-        amt: 2500
-    },
-    {
-        name: "Page G",
-        uv: 3490,
-        pv: 4300,
-        amt: 2100
-    }
-];
+
+
 
 const Blog = () => {
     return (
-        <div>
-            <AreaChart
-                width={500}
-                height={400}
-                data={data}
-                margin={{
-                    top: 10,
-                    right: 30,
-                    left: 0,
-                    bottom: 0
-                }}
-            >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
-            </AreaChart>
-        </div>
+        <>
+            <div className='text-center text-3xl font-bold text-blue-500 mb-10'>
+                <p>Question And Answer</p>
+            </div>
+
+            <div className='   my-3 md:w-3/4 px-5 md:px-0 mx-auto '>
+                <p className='font-bold text-2xl mb-5 '>
+                    1. When should you use context API?
+                </p>
+                <p className='font-semibold text-base mb-5 ml-6 w-9/12 '>
+                    <span className='text-blue-500 mr-2'>Ans:</span>When a large number of components at various nesting levels require access to a single  data this case context api is usually used. using context api you can share any data among components without having to provide props via each level of the component tree.
+                </p>
+                {/* 1 */}
+
+                <p className='font-bold text-2xl mb-5 '>
+                    2. What is a custom hook ?
+                </p>
+                <p className='font-semibold text-base mb-5 ml-6 w-9/12 '>
+                    <span className='text-blue-500 mr-2'>Ans:</span>
+                   it is  React  JavaScript function that starts with the prefix "use" and follows the rules of React hooks. It offers you to reuse stateful logic and distribute it among different parts without having to write duplicate code.
+                </p>
+                {/* 2 */}
+                {/* 3 */}
+                <p className='font-bold text-2xl mb-5 '>
+                    3. What is useRef ?
+                </p>
+                <p className='font-semibold text-base mb-5 ml-6 w-9/12 '>
+                    <span className='text-blue-500 mr-2'>Ans:</span>it is a built-in React hook . it  accepts only one argument as the initial value and returns a reference.
+                </p>
+                {/* 4 */}
+                <p className='font-bold text-2xl mb-5 '>
+                    4. What is useMemo ?
+                </p>
+                <p className='font-semibold text-base mb-5 ml-6 w-9/12 '>
+                    <span className='text-blue-500 mr-2'>Ans:</span>To memoize a function's output, React provides the useMemo hook. In order to improve performance, it caches expensive computations so that they are only recalculated when absolutely necessary.
+                </p>
+
+            </div>
+        </>
     );
 };
 
