@@ -6,8 +6,10 @@ import ApplideJob from './ApplideJob';
 const AppliedJobs = () => {
     const allJobs = useLoaderData()[1];
     const [myJobs, setMyJobs] = useState([])
+    const [defaultJobs, setDefaultJobs] = useState([])
     const [filterJobs, setRemoteJobs] = useState([])
-    const [onSiteJobs, setOnSiteJobs] = useState(false)
+    const [onSiteJobs, setOnSiteJobs] = useState([])
+    
 
     useEffect(() => {
         const myNewJobs = []
@@ -19,11 +21,15 @@ const AppliedJobs = () => {
                 const isAvailableJobs = allJobs.filter(job => job.id == id)
                 myNewJobs.push(...isAvailableJobs);
 
-                const myJobs = myNewJobs
-                setMyJobs(myJobs)
+                const myAppliedJobs = myNewJobs
+                setMyJobs( myAppliedJobs)
+                setDefaultJobs(myAppliedJobs)
+                setRemoteJobs(myAppliedJobs)
+                setOnSiteJobs( myAppliedJobs)
+                
 
             }
-
+           
 
         }
         else {
@@ -35,16 +41,23 @@ const AppliedJobs = () => {
     const FilterRemoteJobs = () => {
             const filter = document.getElementById('filter').value
         if(filter==='Remote'){
-           const RemoteJobs = myJobs.filter(e=> e.remote_or_onsite =="Remote")
+           const RemoteJobs = filterJobs.filter(e=> e.remote_or_onsite =="Remote")
 
           setMyJobs(RemoteJobs)
         }
-        else{
-            console.log('not find')
+        if(filter==='On-Site'){
+            const OnsiteJobs = onSiteJobs.filter(e=> e.remote_or_onsite =="Onsite")
+            setMyJobs(OnsiteJobs)
+
+        }
+        if(filter==='default'){
+           
+            setMyJobs(defaultJobs)
+
         }
 
     }
-
+ 
 
 
 
@@ -60,7 +73,7 @@ const AppliedJobs = () => {
             <section className='my-container '>
                 <div className='text-end'>
                     <select id='filter' onChange={FilterRemoteJobs} className="px-4 py-3 mb-5 w-[12%] font-bold rounded-md bg-[#F4F4F4] border-transparent  focus:border-gray-900 focus:bg-[#F4F4F4]  focus:ring-0 text-sm">
-                        <option value=""> Filters</option>
+                        <option value="default"> Filters</option>
                         <option value="Remote">Remote Jobs</option>
                         <option value="On-Site">On-Site Jobs</option>
                     </select>
