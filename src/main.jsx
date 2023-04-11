@@ -37,7 +37,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/appliedJobs',
-        element:<AppliedJobs></AppliedJobs>
+        element:<AppliedJobs></AppliedJobs>,
+        loader: JobPageLoader
       },
       {
         path: '/blog',

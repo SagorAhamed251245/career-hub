@@ -39,11 +39,11 @@ const JobDetails = () => {
 
     }
 
-   console.log(jobs)
+  
 
     return (
         <>
-            <div className='text-3xl font-bold text-center mt-16 mb-[150px]'>
+            <div className='text-3xl font-bold text-center mt-16 p-16 mb-[150px]'>
                 <h3 >Job Details</h3>
             </div>
 

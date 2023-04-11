@@ -1,46 +1,47 @@
 // use local storage to manage cart data
 import { toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 const addToDb = id => {
-    let shoppingCart = getShoppingCart();
+    let appliedJobInfo = getAppliedJobInfo();
     // add quantity
-    const quantity = shoppingCart[id];
+    const quantity = appliedJobInfo[id];
     if (!quantity) {
-        shoppingCart[id] = 1;
+        appliedJobInfo[id] = 1;
     }
+
     else {
         toast.warn('You are already applied for this job')
-        
+
     }
-    localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
+    localStorage.setItem('applied-jobs', JSON.stringify(appliedJobInfo));
 }
 
 const removeFromDb = id => {
-    const shoppingCart = getShoppingCart();
-    if (id in shoppingCart) {
-        delete shoppingCart[id];
-        localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
+    const appliedJobInfo = getAppliedJobInfo();
+    if (id in appliedJobInfo) {
+        delete appliedJobInfo[id];
+        localStorage.setItem('applied-jobs', JSON.stringify(appliedJobInfo));
     }
 }
 
-const getShoppingCart = () => {
-    let shoppingCart = {};
+const getAppliedJobInfo = () => {
+    let appliedJobInfo = {};
 
     //get the shopping cart from local storage
-    const storedCart = localStorage.getItem('shopping-cart');
+    const storedCart = localStorage.getItem('applied-jobs');
     if (storedCart) {
-        shoppingCart = JSON.parse(storedCart);
+        appliedJobInfo = JSON.parse(storedCart);
     }
-    return shoppingCart;
+    return appliedJobInfo;
 }
 
-const deleteShoppingCart = () => {
-    localStorage.removeItem('shopping-cart');
+const deleteAppliedJobInfo = () => {
+    localStorage.removeItem('applied-jobs');
 }
 
 export {
     addToDb,
     removeFromDb,
-    getShoppingCart,
-    deleteShoppingCart
+    getAppliedJobInfo,
+    deleteAppliedJobInfo
 }

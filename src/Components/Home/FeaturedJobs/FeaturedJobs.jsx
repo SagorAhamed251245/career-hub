@@ -16,7 +16,7 @@ const FeaturedJobs = () => {
     return (
         <section className='my-container'>
             <div className='text-center'>
-                <h2 className='my-h2 '>
+                <h2 className='my-h2  '>
                 Featured Jobs
                 </h2>
                 <p>

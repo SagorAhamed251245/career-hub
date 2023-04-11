@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .my-container {
-    @apply px-4 py-16 mx-auto max-w-xl md:max-w-full md:mx-20 lg:py-20
+    @apply px-4 py-16 mx-auto max-w-xl md:max-w-full md:mx-20  mt-10 lg:py-20
 }
 
 .my-btn {

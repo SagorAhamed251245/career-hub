@@ -5,8 +5,8 @@ const Nav = () => {
     return (
         <nav className=' flex flex-col md:flex-row h-16 items-center justify-between gap-5 md:px-10'>
 
-            <div className='grow font-bold md:text-3xl'>WorkHub</div>
-            <div className='flex flex-row gap-5 font-bold text-[#757575] '>
+            <div className='grow font-bold md:text-3xl mt-3 md:mt-0 text-2xl'>WorkHub</div>
+            <div className='flex flex-row gap-5 font-bold  text-[#757575] '>
         
                 <Link to='/' className='hover:text-[#7E90FE]'>
                     Home
@@ -24,7 +24,7 @@ const Nav = () => {
                     Blog
                 </Link>
             </div>
-            <div className='my-btn '>
+            <div className='my-btn'>
                 <button className='title-text'>Star Applying</button>
             </div>
 
