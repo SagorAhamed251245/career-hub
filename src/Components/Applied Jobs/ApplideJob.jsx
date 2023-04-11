@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const ApplideJob = ({ job }) => {
     const navigate = useNavigate()
     const { id, company_logo, job_title, company_name, remote_or_onsite, fulltime_or_parttime, location, salary } = job
-    console.log(job)
+   
     return (
         <div className='flex flex-col md:flex-row gap-10 border-2  border-slate-400 p-5 rounded-md'>
             <div className='bg-[#F4F4F4] rounded-md mx-auto w-48 h-48 flex justify-center items-center' >
