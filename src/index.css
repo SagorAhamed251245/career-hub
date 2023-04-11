@@ -7,7 +7,7 @@
 }
 
 .my-btn {
-    @apply  bg-gradient-to-r from-cyan-500 to-blue-500 p-2 font-bold text-white
+    @apply  bg-gradient-to-r from-cyan-500 to-blue-500 p-2 font-bold text-white 
     rounded-lg  
 }
 .my-btn-secondary {
