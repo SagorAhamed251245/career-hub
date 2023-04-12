@@ -67,7 +67,7 @@ const MobileNav = () => {
                                         </NavLink>
                                     </li>
                                     <div className='my-btn w-[150px] text-center'>
-                                        <button className='title-text'>Star Applying</button>
+                                        <Link to="/"><button className='title-text'>Star Applying</button></Link>
                                     </div>
                                 </ul>
 

@@ -79,7 +79,7 @@ const AppliedJobs = () => {
              </div>
             <section className='my-container '>
                 <div className='text-end'>
-                    <select id='filter' onChange={FilterRemoteJobs} className={`px-4 py-3 mb-5 w-[12%] font-bold rounded-md bg-[#F4F4F4] border-transparent  focus:border-gray-900 focus:bg-[#F4F4F4]  focus:ring-0 text-sm ${noJobsApplied ||'hidden'}`}>
+                    <select id='filter' onChange={FilterRemoteJobs} className={`px-4 py-3 mb-5 w-[150px] font-bold rounded-md bg-[#F4F4F4] border-transparent  focus:border-gray-900 focus:bg-[#F4F4F4]  focus:ring-0 text-sm ${noJobsApplied ||'hidden'}`}>
                         <option value="default"> Filters</option>
                         <option value="Remote">Remote Jobs</option>
                         <option value="On-Site">On-Site Jobs</option>

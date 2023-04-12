@@ -36,7 +36,7 @@ const Nav = () => {
                 </li>
             </ul>
             <div className='my-btn hidden md:inline'>
-                <button className='title-text'>Star Applying</button>
+               <Link to='/'> <button className='title-text'>Star Applying</button></Link>
             </div>
 
             <MobileNav></MobileNav>
