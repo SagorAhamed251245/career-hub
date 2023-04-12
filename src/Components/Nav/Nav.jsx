@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link , NavLink } from 'react-router-dom';
 
 const Nav = () => {
     return (
@@ -7,8 +7,8 @@ const Nav = () => {
 
             <div className='grow font-bold md:text-3xl mt-3 md:mt-0 text-2xl'>WorkHub</div>
             <div className='flex flex-row gap-5 font-bold  text-[#757575] '>
-        
-                <Link to='/' className='hover:text-[#7E90FE]'>
+            
+                <Link to='/' className='hover:text-[#7E90FE]' >
                     Home
                 </Link>
 
