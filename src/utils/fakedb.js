@@ -7,6 +7,7 @@ const addToDb = id => {
     const quantity = appliedJobInfo[id];
     if (!quantity) {
         appliedJobInfo[id] = 1;
+        toast.success('Great! You are Now applied for this job')
     }
 
     else {

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { getAppliedJobInfo } from '../../utils/fakedb';
 import { useLoaderData } from 'react-router-dom';
 import ApplideJob from './ApplideJob';
+import NoJobs from './NoJobs';
 
 const AppliedJobs = () => {
     const allJobs = useLoaderData()[1];
@@ -9,8 +10,9 @@ const AppliedJobs = () => {
     const [defaultJobs, setDefaultJobs] = useState([])
     const [filterJobs, setRemoteJobs] = useState([])
     const [onSiteJobs, setOnSiteJobs] = useState([])
+    const [noJobsApplied , setNoJobsApplied] = useState(true)
     
-
+    
     useEffect(() => {
         const myNewJobs = []
         const findFromLocal = getAppliedJobInfo()
@@ -34,7 +36,7 @@ const AppliedJobs = () => {
         }
         else {
 
-            nothing = 'nothing'
+            setNoJobsApplied(false)
         }
 
     }, [])
@@ -65,14 +67,19 @@ const AppliedJobs = () => {
 
     return (
         <>
-            <div className='text-3xl font-bold text-center mt-16 p-16 mb-[150px]'>
+            <div className={`text-3xl font-bold text-center mt-16 p-16 mb-[150px] ${noJobsApplied ||'hidden'}`} >
                 <h3 >Applied Jobs</h3>
-
+                 
             </div>
+            
+             <div className={`${noJobsApplied && 'hidden'}`}>
+                
+                <NoJobs></NoJobs>
 
+             </div>
             <section className='my-container '>
                 <div className='text-end'>
-                    <select id='filter' onChange={FilterRemoteJobs} className="px-4 py-3 mb-5 w-[12%] font-bold rounded-md bg-[#F4F4F4] border-transparent  focus:border-gray-900 focus:bg-[#F4F4F4]  focus:ring-0 text-sm">
+                    <select id='filter' onChange={FilterRemoteJobs} className={`px-4 py-3 mb-5 w-[12%] font-bold rounded-md bg-[#F4F4F4] border-transparent  focus:border-gray-900 focus:bg-[#F4F4F4]  focus:ring-0 text-sm ${noJobsApplied ||'hidden'}`}>
                         <option value="default"> Filters</option>
                         <option value="Remote">Remote Jobs</option>
                         <option value="On-Site">On-Site Jobs</option>
